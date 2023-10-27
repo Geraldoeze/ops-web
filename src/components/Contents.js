@@ -9,7 +9,9 @@ export default function Contents() {
 
       <div className="flex flex-col justify-center h-[70vh]">
         <form>
-          <h3 className="my-6 text-center text-xl md:text-2xl">Kindly Fill all Forms</h3>
+          <h3 className="my-6 text-center text-xl md:text-2xl">
+            Kindly Fill all Forms
+          </h3>
           <div className="my-6 w-4/5 md:w-[450px] mx-auto">
             <label
               for="first_name"
@@ -40,7 +42,7 @@ export default function Contents() {
               require
             />
             <p class="invisible peer-invalid:visible text-red-700 font-light">
-                Please enter your full name
+              Please enter your full name
             </p>
           </div>
           <div class="flex justify-center mt-8 w-4/5 md:w-[450px] mx-auto">
@@ -60,9 +62,9 @@ export default function Contents() {
                         stroke="currentColor"
                       >
                         <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
                           d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"
                         />
                       </svg>
