@@ -2,8 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+.vertical {
+  writing-mode: vertical-rl;
+  text-orientation: sideways;
+  text-align: center;
+  transform: rotate(-180deg);
+}
+.vertical_two {
+  transform: rotate(90deg);
+  transform-origin: left top 0;
+  margin: 70px;
+}
+
+
+
+
 .loader {
-  
   width: 48px;
   height: 48px;
   border: 5px solid #777373;
@@ -14,7 +28,7 @@
   animation: pulse 1s linear infinite;
 }
 .loader:after {
-  content: '';
+  content: "";
   position: absolute;
   width: 88px;
   height: 88px;
@@ -29,10 +43,21 @@
 }
 
 @keyframes scaleUp {
-  0% { transform: translate(-50%, -50%) scale(0) }
-  60% , 100% { transform: translate(-50%, -50%)  scale(1)}
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+  60%,
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
 }
 @keyframes pulse {
-  0% , 60% , 100%{ transform:  scale(1) }
-  80% { transform:  scale(1.2)}
+  0%,
+  60%,
+  100% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(1.2);
+  }
 }

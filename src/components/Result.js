@@ -1,4 +1,5 @@
 import React from "react";
+import Barcode from "./barcode/Barcode";
 
 export default function Result() {
   return (
@@ -37,14 +38,22 @@ export default function Result() {
             </div>
 
             <div className="p-6 space-y-6">
-              <div className="block max-w-sm p-6 bg-[#fff8dc] h-[300px] border border-gray-300 rounded-lg shadow ">
-                <h4 className="transform rotate-[-50deg] w-10/12 h-[4rem]">loremvthere testing coded
-                </h4>
-                
-                {/* <p className="font-normal text-gray-700 dark:text-gray-400">
-                  Here are the biggest enterprise technology acquisitions of
-                  2021 so far, in reverse chronological order.
-                </p> */}
+              <div className="max-w-lg relative flex bg-[#fff8dc] h-[300px] border border-gray-300 rounded-lg shadow ">
+                <div class="vertical w-[40px] h-[280px] py-5 pr-3 font-semibold">
+                  SIKE OPS DIVISION
+                </div>{" "}
+                <div className="vertical w-[60px] bg-[#3d7410] py-5 pr-2 text-4xl font-semibold text-white">
+                  NO ESCORT
+                </div>
+                <div className="flex-1 ml-2">
+                  <div className="flex h-[200px] flex-1">
+                    <div></div>
+                    <div>
+                      <img src="" alt="i" width={150} height={150} />
+                    </div>
+                  </div>
+                  <Barcode />
+                </div>
               </div>
             </div>
 
