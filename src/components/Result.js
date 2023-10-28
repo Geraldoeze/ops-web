@@ -2,6 +2,7 @@ import React from "react";
 import Barcode from "./barcode/Barcode";
 
 export default function Result() {
+  
   return (
     <div>
       <div
@@ -11,7 +12,7 @@ export default function Result() {
       >
         <div className="relative w-full max-w-2xl max-h-full">
           <div className="relative bg-white rounded-lg shadow dark:bg-gray-100">
-            <div className="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+            <div className="flex items-start justify-between p-4 border-b rounded-t border-gray-600">
               <h3 className="text-xl font-semibold text-gray-900">Details</h3>
               <button
                 type="button"
@@ -46,10 +47,13 @@ export default function Result() {
                   NO ESCORT
                 </div>
                 <div className="flex-1 ml-2">
-                  <div className="flex h-[200px] flex-1">
-                    <div></div>
+                  <div className="flex h-[200px] p-8 items-center gap-2 justify-between flex-1">
+                    <div className="w-[50%] mt-5">
+                      <h4 className="border-b rounded-t border-gray-600 w-full">Joseph Malik </h4>
+                      <h4 className="w-full">Civil Servant</h4>
+                    </div>
                     <div>
-                      <img src="" alt="i" width={150} height={150} />
+                      <img src="assets/image3.png" alt="i" width={180} height={180} />
                     </div>
                   </div>
                   <Barcode />
